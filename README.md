@@ -15,7 +15,7 @@ The module also supports converting binary tree implied sequences to natural lan
 ## Getting Started
 Run `demo.py` and `sentree_util.py` to get started.
 
-The `sentree_util.py` can do the convertions between sentences and binary tree implied sequences based on your option and input.
+The `sentree_util.py` can do the conversions between sentences and binary tree implied sequences based on your option and input.
 It will be a handy tool during the process of integrating SenTree to existing systems.
 
 ## Integrating
