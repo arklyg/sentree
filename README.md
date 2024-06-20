@@ -12,6 +12,12 @@ The module also supports converting binary tree implied sequences to natural lan
 4. Clone this repository.
 5. Edit the configuration file `probe.yaml` of this project, especially the absolute path of `depth_params_path`
 
+## Getting Started
+Run `demo.py` and `sentree_util.py` to get started.
+
+The `sentree_util.py` can do the convertions between sentences and binary tree implied sequences based on your option and input.
+It will be a handy tool during the process of integrating SenTree to existing systems.
+
 ## Integrating
 
 The module is proposed to be used to convert the raw sentence into binary tree implied sequence for decoder.
