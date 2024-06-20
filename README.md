@@ -29,3 +29,9 @@ The SenTree module should be integrated into autoregressive models as illustrate
 <p align="center">
   <img src="doc-assets/sentree-transformer-process.png" width="550" title="hover text" alt="SenTree integrated into autoregressive models">
 </p>
+
+## Additional Information
+
+The binary tree implied sequences output by SenTree corresponding to the input sentences are not constant.
+These sequences vary depending on the model weights and different auto-encoding models behind the Structural-Probe.
+Also, this variability is a key feature that can be used to search for proper ways of expressions from both perspectives of decoder and the SenTree system.
