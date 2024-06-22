@@ -25,16 +25,16 @@ class BinTree(object):
         # instance variables
         self.data, self.left, self.right = data, left, right
 
-    def trav_root(self, seq = []):
-        seq += [self.data]
+    def trav_root(self, seq=None):
+        seq = (seq + [self.data]) if seq else [self.data]
         if self.left or self.right:
             seq += [BinTree.token_internal]
             if self.left:
-                self.left.trav_root(seq)
+                seq = self.left.trav_root(seq)
             else:
                 seq += [BinTree.token_vacancy]
             if self.right:
-                self.right.trav_root(seq)
+                seq = self.right.trav_root(seq)
             else:
                 seq += [BinTree.token_vacancy]
         return seq
