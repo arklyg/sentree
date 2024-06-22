@@ -33,19 +33,16 @@ if __name__ == '__main__':
 
     print("SenTree Util. (2024 Yaguang Li)")
 
-    prompt = input("\nEnter s to convert a sentence to a binary tree implied sequence, or\n" +\
-                     "Enter t to convert a binary tree implied sequence to a sentence, or\n" +\
-                     "Enter q to quit: ")
-
-    while prompt not 'q':
-        while prompt not 'q':
-            prompt = input("Input the sentence:\n> ")
-            if prompt == 'q' or prompt == 't':
-                break
-            print(' '.join(sentree_instance.sentence_to_sequence(prompt)))
-        while prompt not 'q':
-            prompt = input("Input the sequence:\n> ")
-            if prompt == 'q' or prompt == 's':
-                break
+    while True:
+        command = input("\nEnter s to convert a sentence to a binary tree implied sequence, or\n" +\
+                          "Enter t to convert a binary tree implied sequence to a sentence, or\n" +\
+                          "Enter q to quit: ")
+        if command == 'q':
+            break
+        if command == 's':
+            sentence = input("Input the sentence:\n> ")
+            print(' '.join(sentree_instance.sentence_to_sequence(sentence)))
+        elif command == 't':
+            sequence = input("Input the sequence:\n> ")
             print(bintree.BinTree.build_from_sequence(sequence.strip().split()))
     
